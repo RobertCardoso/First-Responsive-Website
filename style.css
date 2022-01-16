@@ -1,5 +1,5 @@
 .container {
-    margin: 0;
+    
     height: auto;
     background-color: azure;
     display: grid;
@@ -15,7 +15,6 @@ header {
     text-align: center;
     text-justify: center;
     width: auto;
-    height: 300px;
     grid-area: header;  
 }
 h1 {
@@ -61,17 +60,41 @@ h2 {
 p {
     width: 180px;
 }
-footer {
-    grid-area: ;
-}
+
 
 @media (min-width: 992px) { 
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "article article article"
+        ;
+
+    }
   header {
-      background: black;
+      background: rgb(18, 240, 203);
+    
   }
-
-
-
-
+  main {
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      grid-area: article;
+      justify-content: center;
+      align-items: center;
+  }
+ p {
+     color: white;
+ }
+ h2 {
+     color: white;
+ }
+article{
+    margin: 50px;
+    margin-top: 0;
+    
+}
 
  }
