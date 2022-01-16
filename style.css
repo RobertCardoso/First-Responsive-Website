@@ -1,0 +1,77 @@
+.container {
+    margin: 0;
+    height: auto;
+    background-color: azure;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    grid-template-areas:
+    "header"
+    "main"
+   
+}
+
+header {
+    background-color: rgb(96, 197, 236);
+    text-align: center;
+    text-justify: center;
+    width: auto;
+    height: 300px;
+    grid-area: header;  
+}
+h1 {
+   font-size: 50px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-content: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-justify: center;
+}
+.a1 {
+    border-top: 20px solid rgb(96, 197, 236);
+}
+.a2{
+    border-top: 20px solid rgb(209, 103, 3);
+}
+.a3{
+    border-top: 20px solid rgb(18, 240, 203);
+}
+h2 {
+    margin-top:10px;
+}
+p {
+    width: 180px;
+}
+footer {
+    grid-area: ;
+}
+
+@media (min-width: 992px) { 
+  header {
+      background: black;
+  }
+
+
+
+
+
+ }
